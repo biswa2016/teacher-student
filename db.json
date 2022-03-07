@@ -1,0 +1,115 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "data": [
+    {
+      "uname": "Bisaw ranjan Nayak",
+      "email": "abcd@gmail.com",
+      "gender": "male",
+      "occupation": true,
+      "student": "",
+      "id": 1
+    },
+    {
+      "uname": "sam",
+      "email": "efgh@gmail.com",
+      "gender": "",
+      "occupation": "",
+      "student": "",
+      "id": 4
+    },
+    {
+      "uname": "resma",
+      "email": "test",
+      "gender": "female",
+      "occupation": "teacher",
+      "student": "",
+      "id": 7
+    },
+    {
+      "uname": "Bisaw ranjan Nayak",
+      "email": "abcd@gmail.com",
+      "gender": "male",
+      "occupation": "teacher",
+      "student": "",
+      "id": 8
+    },
+    {
+      "uname": "lam",
+      "email": "nh@gmail.com",
+      "gender": "female",
+      "occupation": "teacher",
+      "student": "",
+      "id": 10
+    },
+    {
+      "uname": "test01",
+      "email": "test01",
+      "gender": "female",
+      "occupation": "student",
+      "student": "",
+      "uid": "",
+      "id": 12
+    },
+    {
+      "uname": "test",
+      "email": "",
+      "gender": "",
+      "occupation": "",
+      "student": "",
+      "uid": "",
+      "id": 14
+    },
+    {
+      "uname": "Bisaw ranjan Nayak",
+      "email": "abcd@gmail.com",
+      "gender": "male",
+      "occupation": "teacher",
+      "student": "",
+      "uid": "",
+      "id": 15
+    },
+    {
+      "uname": "Bisaw ranjan Nayak",
+      "email": "abcd@gmail.com",
+      "gender": "male",
+      "occupation": "teacher",
+      "student": "",
+      "uid": "",
+      "id": 16
+    },
+    {
+      "uname": "Bisaw ranjan Nayak",
+      "email": "abcd@gmail.com",
+      "gender": "male",
+      "occupation": "teacher",
+      "student": "",
+      "uid": "",
+      "id": 17
+    },
+    {
+      "uname": "Bisaw ranjan Nayak",
+      "email": "abcd@gmail.com",
+      "gender": "male",
+      "occupation": "student",
+      "student": "",
+      "uid": "",
+      "id": 18
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

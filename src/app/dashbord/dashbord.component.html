@@ -1,0 +1,82 @@
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Gender</th>
+      <th>Occupation</th>
+      <th>USER ID</th>
+      <th>Remove</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let v of value">
+      <td>{{v.id}}</td>
+      <td>{{v.uname}}</td>
+      <td>{{v.email}}</td>
+      <td>{{v.gender}}</td>
+      <td>{{v.occupation}}</td>
+      <td>{{v.uid}}</td>
+      <td><button (click)="deleteData(v.id)" class="btn btn-danger">Delete</button></td>
+      <td>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+            view-details
+          </button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form #save="ngForm"  (ngSubmit)="login(save.value)">
+          <div class="form-group">
+            <label for="exampleInputEmail1">User ID</label>
+            <input #uid="ngModel"  type="number" [(ngModel)]="selectedProduct.uid" class="form-control" id="userID" aria-describedby="emailHelp" ngModel>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input #uname="ngModel" name="uname" [(ngModel)]="selectedProduct.uname" type="text" class="form-control" id="uname" aria-describedby="emailHelp" ngModel>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input #email="ngModel" name="email" [(ngModel)]="selectedProduct.email"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ngModel>
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleInputEmail1">Gender</label>
+            <input #gender="ngModel" name="gender" [(ngModel)]="selectedProduct.gender"  type="text" class="form-control" id="gender" aria-describedby="emailHelp" ngModel>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Occupation</label>
+            <input #password="ngModel" name="password" [(ngModel)]="selectedProduct.occupation"  type="text" class="form-control" id="password" ngModel>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" type="submit" (click)="dataSubmit()" class="btn btn-primary"> Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

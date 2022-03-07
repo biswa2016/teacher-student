@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 m-auto">
+            <div class="card">
+                <div class="card-body bg-info">
+                 <form [formGroup]="regForm" (ngSubmit)="reg()" >
+                    <input type="text" placeholder="User Name" class="from-control" formControlName="uname" name="uname"><br>
+                    <input type="email" placeholder="Email" class="from-control" formControlName="email" name="email" ><br>
+                    <input type="text" placeholder="Password" class="from-control" formControlName="password" name="password"><br>
+                    <div class="form-group">
+                      <label for="">Gender :</label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" class="from-control" formControlName="gender" value="male">
+                        <label class="form-check-label" for="inlineRadio1">male</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" class="from-control"  formControlName="gender" value="female" >
+                        <label class="form-check-label" for="inlineRadio2">female</label>
+                      </div>
+                    </div>
+                   <div class="form-group">
+                       <label for="">Occupation :</label>
+                         <input class="form-check-input" class="from-control" formControlName="occupation" name="occupation" type="radio" id="inlineCheckbox1" value="teacher">
+                         <label class="form-check-label"  for="inlineCheckbox1">Teacher</label>           
+                         <input class="form-check-input" class="from-control" name="occupation" formControlName="occupation" type="radio" id="inlineCheckbox2" value="student">
+                         <label class="form-check-label" for="inlineCheckbox2">Student</label>
+                   </div>
+                   <input type="number" class="form-check-input" class="from-control" placeholder="userId" name="uid"><br><br>
+ 
+                   <button type="submit" class="btn btn-dark">Sumbit</button>
+                 </form>
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
